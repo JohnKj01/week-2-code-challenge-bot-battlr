@@ -13,7 +13,7 @@ class BotsPage extends Component {
   }
 
   componentDidMount(){
-    fetch(`http://localhost:3001/bots`)
+    fetch(`http://localhost:3000/bots`)
     .then(res => res.json())
     .then(bots => this.setState({ bots }))
   }
@@ -33,14 +33,14 @@ class BotsPage extends Component {
   }
 
   dischargeForever = (armyBot) => {
-    // debugger
+   
     if(this.state.botArmy.find(bot => bot === armyBot)){
       const bots = this.state.bots.filter(bot => bot !== armyBot)
       const botArmy = this.state.botArmy.filter(bot => bot !== armyBot)
 
       this.setState({ bots, botArmy })
 
-      fetch(`http://localhost:3001/bots/${armyBot.id}`, {
+      fetch(`http://localhost:3000/bots/${armyBot.id}`, {
         method: 'DELETE'
       })
     } else {
