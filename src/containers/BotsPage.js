@@ -40,10 +40,7 @@ class BotsPage extends Component {
 
       this.setState({ bots, botArmy })
 
-      fetch(`http://localhost:3001/bots/`, {
-      (res=>res.json());
-        (res.json.${armyBot.id}.method: 'DELETE')
-
+      fetch(`http://localhost:3001/bots/${armyBot.id}`, {
         method: 'DELETE'
       })
     } else {
