@@ -1,5 +1,6 @@
 .bot-army {
-    overflow-x: visible;
+    overflow-x: scroll;
+    overflow-y: ;
     min-height: 300px;
     max-width: 100%;
   }
