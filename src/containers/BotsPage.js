@@ -33,7 +33,7 @@ class BotsPage extends Component {
   }
 
   dischargeForever = (armyBot) => {
-   
+    
     if(this.state.botArmy.find(bot => bot === armyBot)){
       const bots = this.state.bots.filter(bot => bot !== armyBot)
       const botArmy = this.state.botArmy.filter(bot => bot !== armyBot)
