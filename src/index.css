@@ -7,6 +7,3 @@ body {
 .text-wrap {
 	word-wrap: break-word;
 }
-div.image {
-  width: min-content;
-}
